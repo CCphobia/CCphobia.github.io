@@ -15,9 +15,6 @@ import loveu from './assets/GifData/cutieSwal4.gif';
 
 //! yes - Gifs Importing
 import yesgif0 from "./assets/GifData/Yes/lovecutie0.gif";
-import yesgif1 from "./assets/GifData/Yes/love2.gif";
-import yesgif2 from "./assets/GifData/Yes/love3.gif";
-import yesgif3 from "./assets/GifData/Yes/love1.gif";
 import yesgif4 from "./assets/GifData/Yes/lovecutie1.gif";
 import yesgif5 from "./assets/GifData/Yes/lovecutie5.gif";
 import yesgif6 from "./assets/GifData/Yes/lovecutie7.gif";
@@ -35,25 +32,20 @@ import nogif3 from "./assets/GifData/No/breakRej3.gif";
 import nogif4 from "./assets/GifData/No/breakRej4.gif";
 import nogif5 from "./assets/GifData/No/breakRej5.gif";
 import nogif6 from "./assets/GifData/No/breakRej6.gif";
-import nogif7 from "./assets/GifData/No/RejectNo.gif";
 import nogif8 from "./assets/GifData/No/breakRej7.gif";
 
 //! yes - Music Importing
-import yesmusic1 from "./assets/AudioTracks/Love_LoveMeLikeYouDo.mp3";
-import yesmusic2 from "./assets/AudioTracks/Love_EDPerfect.mp3";
-import yesmusic3 from "./assets/AudioTracks/Love_Nadaaniyan.mp3";
-import yesmusic4 from "./assets/AudioTracks/Love_JoTumMereHo.mp3";
+import yesmusic1 from "./assets/AudioTracks/mandacik.mp3";
 //! no - Music Importing
-import nomusic1 from "./assets/AudioTracks/Rejection_WeDontTalkAnyMore.mp3";
-import nomusic2 from "./assets/AudioTracks/Rejection_LoseYouToLoveMe.mp3";
-import nomusic3 from "./assets/AudioTracks/Reject_withoutMe.mp3";
-import nomusic4 from "./assets/AudioTracks/Neutral_Base_IHateU.mp3";
-import nomusic5 from "./assets/AudioTracks/Reject1_TooGood.mp3";
+import nomusic1 from "./assets/AudioTracks/nie_nie_nie.mp3";
 
-const YesGifs = [yesgif0, yesgif1, yesgif2, yesgif3, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
-const NoGifs = [nogif0, nogif0_1, nogif1, nogif2, nogif3, nogif4, nogif5, nogif6, nogif7, nogif8];
-const YesMusic = [yesmusic1, yesmusic3, yesmusic4, yesmusic2];
-const NoMusic = [nomusic1, nomusic2, nomusic3, nomusic4, nomusic5];
+import cheese_board_gif from "./assets/GifData/Final/cheese_board.gif";
+
+
+const YesGifs = [yesgif0, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
+const NoGifs = [nogif0, nogif0_1, nogif1, nogif2, nogif3, nogif4, nogif5, nogif6, nogif8];
+const YesMusic = [yesmusic1];
+const NoMusic = [nomusic1];
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -214,31 +206,31 @@ export default function Page() {
   const getNoButtonText = () => {
 
     const phrases = [
-      "No",
-      "Are you sure?",
-      "Really sure?",
-      "Think again!",
-      "Last chance!",
-      "Surely not?",
-      "You might regret this!",
-      "Give it another thought!",
-      "Are you absolutely certain?",
-      "This could be a mistake!",
-      "U Have a heart!💕",
-      "Don't be so cold!",
-      "Wouldn't you reconsider?",
-      "Is that your final answer?",
-      "You're breaking my heart ;(",
-      "But... why? 😢",
-      "Please, pretty please? 💖",
-      "I can't take this! 😫",
-      "Are you sure you want to do this to me? 😢",
-      "You're gonna hurt my feelings! 😥",
-      "I need you to reconsider, like now! 😓",
-      "I believe in you, don't disappoint me! 💔",
-      "My heart says yes, what about yours? ❤️",
-      "Don't leave me hanging! 😬",
-      "Plsss? :( You're breaking my heart 💔",
+      "Nie?",
+      "Na pewno?",
+      "Na pewno pewno??",
+      "Lepiej to przemyśl",
+      "Ostatnia szansa!",
+      "Na pewno pewno pewno?",
+      "9 na 10 dentystów żałuje takiej decyzji!",
+      "A może jednak?",
+      "A może jednak jednak?",
+      "To może nie być dobre rozwiązanie!",
+      "Nie no weź kicia",
+      "Jakoś Cię przekonam",
+      "Albo przekupię",
+      "Czy to ostateczna odpowiedź?",
+      "Taaa, jasne",
+      "Niemożliwe",
+      "Bardzo ładnie proszę",
+      "Nie wytrzymam :(",
+      "Jeszcze możesz zawrócić!",
+      "Lepiej tego nie rób",
+      "Każdemu zdarzają się błędy",
+      "Oj tam kicia, nie może być tak źle",
+      "Do tanga trzeba dwojga",
+      "Daj się namówić",
+      "Nie zawiedziesz się",
     ];
     
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -247,7 +239,7 @@ export default function Page() {
   useEffect(() => {
     if (yesPressed && noCount < 4 && !popupShown) {
       Swal.fire({
-        title: "I love you sooo Much!!!❤️, You’ve stolen my heart completely!!! 🥰💖 But itni pyaari ladki aur itni jaldi haan? Thoda aur nakhre karke mujhe tarpaao na! 🥰✨",
+        title: "Mówiłem że się doczekasz kicia 💖✨",
         showClass: {
           popup: `
             animate__animated
@@ -274,7 +266,7 @@ export default function Page() {
   useEffect(() => {
     if (yesPressed && noCount > 3 && !yespopupShown) {
       Swal.fire({
-        title: "I love you so much!! ❤️ You are my everything, my joy, my forever. Every moment with you is a memory I’ll cherish forever, and my heart beats only for you.</br> Will you be the love of my life forever?",
+        title: "Mówiłem że się doczekasz kicia 💖✨",
         width: 800,
         padding: "2em",
         color: "#716add",
@@ -294,7 +286,7 @@ export default function Page() {
   useEffect(() => {
     if (noCount == 25) {
       Swal.fire({
-        title: "My love for you is endless, like the stars in the sky—shining for you every night, even if you don’t always notice. 🌟 I’ll wait patiently, proving every day that you’re my everything. ❤️ Please press ‘Yes’ and let’s make this a forever story. 🥰✨<br/>'True love never gives up; it grows stronger with time.'",
+        title: "Fiu fiu, trochę to zajęło, ale będzie Pani zadowolona 😘",
         width: 850,
         padding: "2em",
         color: "#716add",
@@ -330,6 +322,13 @@ export default function Page() {
             <div className="text-4xl md:text-6xl font-bold my-2" style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}>I Love You !!!</div>
             <div  className="text-4xl md:text-4xl font-bold my-1" style={{ fontFamily: "Beau Rivage, serif", fontWeight: "500", fontStyle: "normal" }}> You’re the love of my life. </div> 
             <WordMareque />
+            <div className="flex flex-col items-center">
+              <img 
+                src={cheese_board_gif} 
+                alt="Cheese board gif" 
+                className="w-64 h-64 rounded-lg shadow-md"
+              />
+            </div>
           </>
         ) : (
           <>
@@ -345,7 +344,7 @@ export default function Page() {
               alt="Love Animation"
             />
             <h1 className="text-4xl md:text-6xl my-4 text-center">
-              Will you be my Valentine?
+              Czy zostaniesz moją walentynką?
             </h1>
             <div className="flex flex-wrap justify-center gap-2 items-center">
               <button
@@ -355,7 +354,7 @@ export default function Page() {
                 style={{ fontSize: yesButtonSize }}
                 onClick={handleYesClick}
               >
-                Yes
+                Tak
               </button>
               <button
                 onMouseEnter={handleMouseEnterNo}
@@ -363,7 +362,7 @@ export default function Page() {
                 onClick={handleNoClick}
                 className="bg-rose-500 hover:bg-rose-600 rounded-lg text-white font-bold py-2 px-4"
               >
-                {noCount === 0 ? "No" : getNoButtonText()}
+                {noCount === 0 ? "Nah" : getNoButtonText()}
               </button>
             </div>
             {floatingGifs.map((gif) => (
@@ -391,27 +390,14 @@ export default function Page() {
 
 const Footer = () => {
   return (
-    <a
+    <span
       className="fixed bottom-2 right-2 backdrop-blur-md opacity-80 hover:opacity-95 border p-1 rounded border-rose-300"
-      href="https://github.com/UjjwalSaini07"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       Made with{" "}
       <span role="img" aria-label="heart">
         ❤️
       </span>
-      {" "}by Ujjwal
-    </a>
+      {" "}dla Wiki
+    </span>
   );
 };
-
-
-
-
-
-
-
-// ! Pathways-
-// https://app.spline.design/file/48a9d880-40c9-4239-bd97-973aae012ee0
-// https://app.spline.design/file/72e6aee2-57ed-4698-afa7-430f8ed7bd87
