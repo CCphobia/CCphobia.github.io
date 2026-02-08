@@ -266,7 +266,7 @@ export default function Page() {
   useEffect(() => {
     if (yesPressed && noCount > 3 && !yespopupShown) {
       Swal.fire({
-        title: "Mówiłem że się doczekasz kicia 💖✨",
+        title: "Fiu fiu, trochę to zajęło, ale będzie Pani zadowolona 😘",
         width: 800,
         padding: "2em",
         color: "#716add",
