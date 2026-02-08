@@ -4,19 +4,18 @@ const MarqueeProposal = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sentences = [
-    "You light up my world like no one else.",
-    "Every moment with you feels like magic.",
-    "My world begins and ends with you in it.",
-    "You're the reason my heart beats faster.",
-    "Life feels complete when you're around.",
-    "I can't imagine my future without you.",
-    "You're my sunshine on the darkest days.",
-    "With you, every day is a blessing.",
-    "You’re the missing piece that completes my heart.",
-    "You make even ordinary moments feel extraordinary.",
-    "You make my world brighter and happier.",
-    "You're the dream I never want to wake up from.",
-    "Will you be the love of my life forever?",
+    "Za to że jesteś.",
+    "Za Twój piękny uśmiech.",
+    "Za bycie dla mnie wsparciem.",
+    "Za robienie mi kanapek.",
+    "Za wspólne wypady na kina.",
+    "Za wspólne jedzenie deski serów na sylwestra.",
+    "Za rozświetlanie każdego mojego dnia.",
+    "Za Twoje wysyłane rolki na tok toku.",
+    "Za dbanie o nas.",
+    "Za wszystkie zajebiste obiady i kolacje.",
+    "Za dopracowanie mojej stylówy.",
+    "Za motywację do działania."
   ];
 
   useEffect(() => {
